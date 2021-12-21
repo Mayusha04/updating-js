@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>CGCS is a bootcamp for full stack</p>
+<h3 id="delete">for full stack</h3>
+
+<button onclick="adding()">Add</button>
+<button onclick="removing()">remove</button>
+
+<script>
+function adding() {
+  var para = document.createElement("P");
+  para.innerText = "Hello everyone";
+  document.body.appendChild(para);
+  para.style.color="blue";
+
+}
+
+function removing() {
+  var h3 = document.getElementById("delete");
+  h3.remove();
+}
+</script>
+
+</body>
+</html>
